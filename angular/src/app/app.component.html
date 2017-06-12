@@ -1,0 +1,13 @@
+<div class="stretch-wrapper stretch-wrapper_small">	
+	<div class="pl20 mb10 pr20">
+		<h1>{{title}}</h1>
+		<h2 *ngIf="isAuth">Hello, {{username}}</h2>
+	    <nav>
+	    	<a routerLink="/topics">Topics</a>
+	    	<a *ngIf="!isAuth" routerLink="/login" routerLinkActive="active">Login</a>
+	    	<a *ngIf="isAuth"  routerLink="/logout" routerLinkActive="active">Logout</a>
+	    	
+	    </nav>
+	    <router-outlet></router-outlet>
+   	</div>
+</div>

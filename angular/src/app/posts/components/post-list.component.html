@@ -1,0 +1,14 @@
+<h4><i *ngIf="topic">{{topic.name}}</i></h4>
+<ul>
+	<li *ngFor="let post of posts" (click)="onSelect(post)">
+		{{post.name}}
+		<a *ngIf="post.owner_id==user_id" [routerLink]="['/post', post.id]" >detail</a>
+	</li>
+</ul>
+
+<div *ngIf="selectedPost">
+	<h4>
+	    {{selectedPost.name | uppercase}} is my hero
+  	</h4>
+</div>
+

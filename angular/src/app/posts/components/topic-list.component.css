@@ -1,0 +1,11 @@
+.topic-link {
+	padding: 10px 20px;
+	border-bottom: 1px solid #ccc;
+	display: block;
+}
+ul, li{
+	list-style: none;
+}
+ul {
+	padding-right: 40px;
+}

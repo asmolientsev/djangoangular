@@ -1,0 +1,6 @@
+<ul>
+	<li *ngFor="let topic of topics">
+		
+		<a [routerLink]="['/topic', topic.id]" class="topic-link">{{topic.name}}</a>
+	</li>
+</ul>
